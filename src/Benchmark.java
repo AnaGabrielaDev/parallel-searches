@@ -4,55 +4,88 @@ import java.util.Random;
 
 public class Benchmark {
   public static void main(String[] args) throws InterruptedException, IOException {
-    int[] sizes = {100, 1000, 10000};  // Diferentes tamanhos de array, falta um zero em cada
+    int[] sizes = {100, 1000, 10000};
     int[] threads = {2, 4, 8, 10};
     String csvFile = "resultados_algoritmos.csv";
 
     try (FileWriter writer = new FileWriter(csvFile)) {
       writer.append("Algoritmo,Execução,Tamanho,Threads,Tempo(ms)\n");
 
-      SortAlgorithm[] algorithms = {
-          new BubbleSort(),
-          new QuickSort(),
-          new SelectionSort(),
-      };
-
-      String[] algorithmNames = {"BubbleSort", "QuickSort", "SelectionSort"};
-
       for (int size : sizes) {
-        int[] array = generateRandomArray(size);  // Gera array aleatório
+        System.out.println("em " + size);
+        int[] array = generateRandomArray(size);
 
-        for (int algIndex = 0; algIndex < algorithms.length; algIndex++) {
-          SortAlgorithm algorithm = algorithms[algIndex];
-          String algorithmName = algorithmNames[algIndex];
-          SortExecutor executor = new SortExecutor(algorithm);
+        for (int algIndex = 0; algIndex < 3; algIndex++) {
+          String algorithmName;
+          SortExecutor executor;
 
-          // Execução Serial - 5 amostras
+          switch (algIndex) {
+            case 0:
+              algorithmName = "BubbleSort";
+              executor = new SortExecutor(new BubbleSort());
+              break;
+            case 1:
+              algorithmName = "QuickSort";
+              executor = new SortExecutor(new QuickSort());
+              break;
+            case 2:
+              algorithmName = "SelectionSort";
+              executor = new SortExecutor(new SelectionSort());
+              break;
+            case 3:
+              algorithmName = "MergeSort";
+              executor = new SortExecutor(new MergeSort());
+              break;
+            default:
+              throw new IllegalStateException("Unexpected value: " + algIndex);
+          }
+
+          // Execução Serial
           for (int i = 0; i < 5; i++) {
-            System.out.println("executando serial -- ");
-            int[] arrayCopy = array.clone();  // Copia do array para manter o original intacto
+            int[] arrayCopy = array.clone();
             long startTime = System.nanoTime();
-            executor.executeSerial(arrayCopy);  // Executa o algoritmo de forma serial
+            executor.executeSerial(arrayCopy);
             long endTime = System.nanoTime();
-            double tempo = (endTime - startTime) / 1e6;  // Tempo em milissegundos
+            double tempo = (endTime - startTime) / 1e6;
             writer.append(algorithmName + ",Serial," + size + ",1," + tempo + "\n");
           }
 
-          // Execução Paralela - 5 amostras por cada configuração de threads
+          // Execução Paralela
           for (int numThreads : threads) {
-            System.out.println("executando parallel -- " + numThreads);
             for (int i = 0; i < 5; i++) {
-              int[] arrayCopy = array.clone();  // Copia do array para manter o original intacto
+              SortAlgorithm parallelAlgorithm;
+              switch (algIndex) {
+                case 0:
+                  parallelAlgorithm = new BubbleSortParalelo(numThreads);
+                  break;
+                case 1:
+                  parallelAlgorithm = new QuickSortParalelo(numThreads);
+                  break;
+                case 2:
+                  parallelAlgorithm = new SelectionSortParalelo(numThreads);
+                  break;
+                case 3:
+                  parallelAlgorithm = new MergeSortParalelo(numThreads);
+                  break;
+                default:
+                  throw new IllegalStateException("Unexpected value: " + algIndex);
+              }
+              System.out.println("executando " + parallelAlgorithm);
+
+              int[] arrayCopy = array.clone();
               long startTime = System.nanoTime();
-              executor.executeParallel(arrayCopy, numThreads);  // Executa o algoritmo de forma paralela
+              new SortExecutor(parallelAlgorithm).executeParallel(arrayCopy, numThreads);
               long endTime = System.nanoTime();
-              double tempo = (endTime - startTime) / 1e6;  // Tempo em milissegundos
+              double tempo = (endTime - startTime) / 1e6;
               writer.append(algorithmName + ",Paralelo," + size + "," + numThreads + "," + tempo + "\n");
             }
-          }
+        }
         }
       }
+    } catch (Exception e) {
+      System.out.println(e);
     }
+
 
     System.out.println("Resultados salvos em: " + csvFile);
   }
@@ -61,7 +94,7 @@ public class Benchmark {
     Random rand = new Random();
     int[] array = new int[size];
     for (int i = 0; i < size; i++) {
-      array[i] = rand.nextInt(1000000);
+      array[i] = rand.nextInt(100000); //diminui em 3
     }
     return array;
   }
