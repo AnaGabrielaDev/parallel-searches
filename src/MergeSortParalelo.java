@@ -2,15 +2,21 @@ import java.util.Arrays;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
-import java.util.concurrent.Callable;
 import java.util.ArrayList;
 import java.util.List;
 
 public class MergeSortParalelo implements SortAlgorithm {
     private final ExecutorService threadPool;
+    private final int threshold;
 
     public MergeSortParalelo(int numThreads) {
         this.threadPool = Executors.newFixedThreadPool(numThreads);
+        this.threshold = 1000;
+    }
+
+    public MergeSortParalelo(int numThreads, int threshold) {
+        this.threadPool = Executors.newFixedThreadPool(numThreads);
+        this.threshold = threshold;
     }
 
     @Override
@@ -26,9 +32,11 @@ public class MergeSortParalelo implements SortAlgorithm {
     }
 
     private void mergeSort(int[] array) {
-        if (array.length <= 1) {
+        if (array.length <= threshold) {
+            sequentialMergeSort(array);
             return;
         }
+
         int mid = array.length / 2;
 
         int[] left = Arrays.copyOfRange(array, 0, mid);
@@ -36,8 +44,15 @@ public class MergeSortParalelo implements SortAlgorithm {
 
         List<Future<Void>> futures = new ArrayList<>();
 
-        futures.add(threadPool.submit(new SortTask(left)));
-        futures.add(threadPool.submit(new SortTask(right)));
+        futures.add(threadPool.submit(() -> {
+            sequentialMergeSort(left);
+            return null;
+        }));
+
+        futures.add(threadPool.submit(() -> {
+            sequentialMergeSort(right);
+            return null;
+        }));
 
         for (Future<Void> future : futures) {
             try {
@@ -47,6 +62,21 @@ public class MergeSortParalelo implements SortAlgorithm {
             }
         }
 
+        merge(array, left, right);
+    }
+
+    private void sequentialMergeSort(int[] array) {
+        if (array.length <= 1) {
+            return;
+        }
+
+        int mid = array.length / 2;
+
+        int[] left = Arrays.copyOfRange(array, 0, mid);
+        int[] right = Arrays.copyOfRange(array, mid, array.length);
+
+        sequentialMergeSort(left);
+        sequentialMergeSort(right);
         merge(array, left, right);
     }
 
@@ -64,20 +94,6 @@ public class MergeSortParalelo implements SortAlgorithm {
         }
         while (j < right.length) {
             array[k++] = right[j++];
-        }
-    }
-
-    private class SortTask implements Callable<Void> {
-        private final int[] array;
-
-        public SortTask(int[] array) {
-            this.array = array;
-        }
-
-        @Override
-        public Void call() {
-            mergeSort(array);
-            return null;
         }
     }
 }
