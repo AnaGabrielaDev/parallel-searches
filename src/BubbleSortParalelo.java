@@ -1,16 +1,11 @@
-import java.util.Arrays;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.concurrent.Future;
-import java.util.concurrent.Callable;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.concurrent.RecursiveAction;
+import java.util.concurrent.ForkJoinPool;
 
 public class BubbleSortParalelo implements SortAlgorithm {
-    private final ExecutorService threadPool;
+    private final ForkJoinPool forkJoinPool;
 
     public BubbleSortParalelo(int numThreads) {
-        this.threadPool = Executors.newFixedThreadPool(numThreads);
+        this.forkJoinPool = new ForkJoinPool(numThreads);
     }
 
     @Override
@@ -18,51 +13,72 @@ public class BubbleSortParalelo implements SortAlgorithm {
         if (array == null || array.length <= 1) {
             return;
         }
-        try {
-            bubbleSort(array);
-        } finally {
-            threadPool.shutdown();
-        }
+        forkJoinPool.invoke(new BubbleSortTask(array, 0, array.length - 1));
     }
 
-    private void bubbleSort(int[] array) {
-        int n = array.length;
-        boolean swapped;
-        for (int i = 0; i < n - 1; i++) {
-            swapped = false;
-            List<Future<Void>> futures = new ArrayList<>();
+    private static class BubbleSortTask extends RecursiveAction {
+        private final int[] array;
+        private final int low;
+        private final int high;
+        private static final int THRESHOLD = 100;
 
-            for (int j = 0; j < n - i - 1; j++) {
-                final int index = j;
-                futures.add(threadPool.submit(() -> {
-                    if (array[index] > array[index + 1]) {
-                        swap(array, index, index + 1);
+        public BubbleSortTask(int[] array, int low, int high) {
+            this.array = array;
+            this.low = low;
+            this.high = high;
+        }
+
+        @Override
+        protected void compute() {
+            if (high - low < THRESHOLD) {
+                bubbleSort(array, low, high);
+            } else {
+                int mid = (low + high) / 2;
+                BubbleSortTask leftTask = new BubbleSortTask(array, low, mid);
+                BubbleSortTask rightTask = new BubbleSortTask(array, mid + 1, high);
+                invokeAll(leftTask, rightTask);
+                merge(array, low, mid, high);
+            }
+        }
+
+        private void bubbleSort(int[] array, int low, int high) {
+            for (int i = low; i <= high; i++) {
+                boolean swapped = false;
+                for (int j = low; j < high - i + low; j++) {
+                    if (array[j] > array[j + 1]) {
+                        int temp = array[j];
+                        array[j] = array[j + 1];
+                        array[j + 1] = temp;
+                        swapped = true;
                     }
-                    return null;
-                }));
-            }
-
-            for (Future<Void> future : futures) {
-                try {
-                    future.get();
-                } catch (Exception e) {
-                    e.printStackTrace();
+                }
+                if (!swapped) {
+                    break;
                 }
             }
-
-            for (int j = 0; j < n - i - 1; j++) {
-                if (array[j] > array[j + 1]) {
-                    swapped = true;
-                }
-            }
-
-            if (!swapped) break;
         }
-    }
 
-    private void swap(int[] array, int i, int j) {
-        int temp = array[i];
-        array[i] = array[j];
-        array[j] = temp;
+        private void merge(int[] array, int low, int mid, int high) {
+            int[] temp = new int[high - low + 1];
+            int i = low, j = mid + 1, k = 0;
+
+            while (i <= mid && j <= high) {
+                if (array[i] <= array[j]) {
+                    temp[k++] = array[i++];
+                } else {
+                    temp[k++] = array[j++];
+                }
+            }
+
+            while (i <= mid) {
+                temp[k++] = array[i++];
+            }
+
+            while (j <= high) {
+                temp[k++] = array[j++];
+            }
+
+            System.arraycopy(temp, 0, array, low, temp.length);
+        }
     }
 }
