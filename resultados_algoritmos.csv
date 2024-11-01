@@ -1,361 +1,361 @@
 Algoritmo,Execução,Tamanho,Threads,Tempo(ms)
-BubbleSort,Serial,500,1,15.129928
-BubbleSort,Serial,500,1,1.393969
-BubbleSort,Serial,500,1,2.358927
-BubbleSort,Serial,500,1,2.352755
-BubbleSort,Serial,500,1,2.364046
-BubbleSort,Media serial,500,1,4.719925000000001
-BubbleSort,Paralelo,500,2,224.957625
-BubbleSort,Paralelo,500,2,33.049251
-BubbleSort,Paralelo,500,2,32.914994
-BubbleSort,Paralelo,500,2,14.988616
-BubbleSort,Paralelo,500,2,18.279639
-BubbleSort,Media paralelo,500,2,3.6559277999999997
-BubbleSort,Paralelo,500,5,6.710337
-BubbleSort,Paralelo,500,5,11.593241
-BubbleSort,Paralelo,500,5,10.928991
-BubbleSort,Paralelo,500,5,9.519217
-BubbleSort,Paralelo,500,5,11.902627
-BubbleSort,Media paralelo,500,5,2.3805254000000002
-BubbleSort,Paralelo,500,50,12.109524
-BubbleSort,Paralelo,500,50,7.732043
-BubbleSort,Paralelo,500,50,7.280376
-BubbleSort,Paralelo,500,50,7.234097
-BubbleSort,Paralelo,500,50,6.945568
-BubbleSort,Media paralelo,500,50,1.3891136
-BubbleSort,Paralelo,500,500,42.36247
-BubbleSort,Paralelo,500,500,50.241678
-BubbleSort,Paralelo,500,500,153.656376
-BubbleSort,Paralelo,500,500,225.556951
-BubbleSort,Paralelo,500,500,200.642788
-BubbleSort,Media paralelo,500,500,40.1285576
-SelectionSort,Serial,500,1,14.007582
-SelectionSort,Serial,500,1,4.150111
-SelectionSort,Serial,500,1,3.666403
-SelectionSort,Serial,500,1,3.438805
-SelectionSort,Serial,500,1,3.457749
-SelectionSort,Media serial,500,1,5.744129999999999
-SelectionSort,Paralelo,500,2,106.379344
-SelectionSort,Paralelo,500,2,91.306723
-SelectionSort,Paralelo,500,2,27.729234
-SelectionSort,Paralelo,500,2,23.332647
-SelectionSort,Paralelo,500,2,21.18183
-SelectionSort,Media paralelo,500,2,4.236366
-SelectionSort,Paralelo,500,5,9.09556
-SelectionSort,Paralelo,500,5,9.288269
-SelectionSort,Paralelo,500,5,8.050738
-SelectionSort,Paralelo,500,5,7.793447
-SelectionSort,Paralelo,500,5,8.360565
-SelectionSort,Media paralelo,500,5,1.672113
-SelectionSort,Paralelo,500,50,6.854295
-SelectionSort,Paralelo,500,50,6.924283
-SelectionSort,Paralelo,500,50,7.064061
-SelectionSort,Paralelo,500,50,7.177721
-SelectionSort,Paralelo,500,50,6.703765
-SelectionSort,Media paralelo,500,50,1.3407529999999999
-SelectionSort,Paralelo,500,500,41.908374
-SelectionSort,Paralelo,500,500,43.842815
-SelectionSort,Paralelo,500,500,44.017045
-SelectionSort,Paralelo,500,500,45.743263
-SelectionSort,Paralelo,500,500,42.018247
-SelectionSort,Media paralelo,500,500,8.4036494
-BubbleSort,Serial,5000,1,21.607276
-BubbleSort,Serial,5000,1,20.398364
-BubbleSort,Serial,5000,1,20.17329
-BubbleSort,Serial,5000,1,21.400087
-BubbleSort,Serial,5000,1,20.243649
-BubbleSort,Media serial,5000,1,20.7645332
-BubbleSort,Paralelo,5000,2,1408.625215
-BubbleSort,Paralelo,5000,2,1376.410277
-BubbleSort,Paralelo,5000,2,1368.221854
-BubbleSort,Paralelo,5000,2,1297.382697
-BubbleSort,Paralelo,5000,2,1330.178789
-BubbleSort,Media paralelo,5000,2,266.0357578
-BubbleSort,Paralelo,5000,5,1675.061036
-BubbleSort,Paralelo,5000,5,2272.516702
-BubbleSort,Paralelo,5000,5,1478.000226
-BubbleSort,Paralelo,5000,5,2184.196852
-BubbleSort,Paralelo,5000,5,1731.254479
-BubbleSort,Media paralelo,5000,5,346.25089579999997
-BubbleSort,Paralelo,5000,50,58.502969
-BubbleSort,Paralelo,5000,50,58.242696
-BubbleSort,Paralelo,5000,50,57.376426
-BubbleSort,Paralelo,5000,50,59.265716
-BubbleSort,Paralelo,5000,50,55.740185
-BubbleSort,Media paralelo,5000,50,11.148036999999999
-BubbleSort,Paralelo,5000,500,109.152953
-BubbleSort,Paralelo,5000,500,115.305259
-BubbleSort,Paralelo,5000,500,113.301475
-BubbleSort,Paralelo,5000,500,114.80973
-BubbleSort,Paralelo,5000,500,104.46596
-BubbleSort,Media paralelo,5000,500,20.893192
-SelectionSort,Serial,5000,1,11.671953
-SelectionSort,Serial,5000,1,7.065835
-SelectionSort,Serial,5000,1,7.01707
-SelectionSort,Serial,5000,1,6.938541
-SelectionSort,Serial,5000,1,7.044909
-SelectionSort,Media serial,5000,1,7.947661599999999
-SelectionSort,Paralelo,5000,2,1527.026798
-SelectionSort,Paralelo,5000,2,1395.778893
-SelectionSort,Paralelo,5000,2,1361.125089
-SelectionSort,Paralelo,5000,2,1379.446995
-SelectionSort,Paralelo,5000,2,1405.169651
-SelectionSort,Media paralelo,5000,2,281.0339302
-SelectionSort,Paralelo,5000,5,1808.620136
-SelectionSort,Paralelo,5000,5,567.060254
-SelectionSort,Paralelo,5000,5,1330.016886
-SelectionSort,Paralelo,5000,5,2028.527109
-SelectionSort,Paralelo,5000,5,1545.020373
-SelectionSort,Media paralelo,5000,5,309.0040746
-SelectionSort,Paralelo,5000,50,257.154762
-SelectionSort,Paralelo,5000,50,283.979506
-SelectionSort,Paralelo,5000,50,261.56024
-SelectionSort,Paralelo,5000,50,285.113315
-SelectionSort,Paralelo,5000,50,278.768842
-SelectionSort,Media paralelo,5000,50,55.7537684
-SelectionSort,Paralelo,5000,500,531.234789
-SelectionSort,Paralelo,5000,500,527.462198
-SelectionSort,Paralelo,5000,500,509.670268
-SelectionSort,Paralelo,5000,500,520.790704
-SelectionSort,Paralelo,5000,500,532.796309
-SelectionSort,Media paralelo,5000,500,106.55926179999999
-BubbleSort,Serial,8000,1,227.996528
-BubbleSort,Serial,8000,1,131.597805
-BubbleSort,Serial,8000,1,59.083478
-BubbleSort,Serial,8000,1,57.90135
-BubbleSort,Serial,8000,1,57.813836
-BubbleSort,Media serial,8000,1,106.87859940000001
-BubbleSort,Paralelo,8000,2,3545.678554
-BubbleSort,Paralelo,8000,2,3503.857671
-BubbleSort,Paralelo,8000,2,3434.665771
-BubbleSort,Paralelo,8000,2,3416.836627
-BubbleSort,Paralelo,8000,2,3449.112507
-BubbleSort,Media paralelo,8000,2,689.8225014
-BubbleSort,Paralelo,8000,5,2880.093561
-BubbleSort,Paralelo,8000,5,3036.602262
-BubbleSort,Paralelo,8000,5,4484.712094
-BubbleSort,Paralelo,8000,5,4559.286691
-BubbleSort,Paralelo,8000,5,4949.270768
-BubbleSort,Media paralelo,8000,5,989.8541536
-BubbleSort,Paralelo,8000,50,542.256482
-BubbleSort,Paralelo,8000,50,578.593144
-BubbleSort,Paralelo,8000,50,585.334036
-BubbleSort,Paralelo,8000,50,582.947081
-BubbleSort,Paralelo,8000,50,542.311171
-BubbleSort,Media paralelo,8000,50,108.46223419999998
-BubbleSort,Paralelo,8000,500,103.613296
-BubbleSort,Paralelo,8000,500,127.413636
-BubbleSort,Paralelo,8000,500,333.469951
-BubbleSort,Paralelo,8000,500,449.8714
-BubbleSort,Paralelo,8000,500,443.747401
-BubbleSort,Media paralelo,8000,500,88.74948020000001
-SelectionSort,Serial,8000,1,79.238153
-SelectionSort,Serial,8000,1,60.417984
-SelectionSort,Serial,8000,1,51.947657
-SelectionSort,Serial,8000,1,26.758795
-SelectionSort,Serial,8000,1,18.785456
-SelectionSort,Media serial,8000,1,47.429609
-SelectionSort,Paralelo,8000,2,3419.693582
-SelectionSort,Paralelo,8000,2,3514.831463
-SelectionSort,Paralelo,8000,2,3528.742221
-SelectionSort,Paralelo,8000,2,3501.283164
-SelectionSort,Paralelo,8000,2,3449.199663
-SelectionSort,Media paralelo,8000,2,689.8399326
-SelectionSort,Paralelo,8000,5,4561.424374
-SelectionSort,Paralelo,8000,5,5200.155468
-SelectionSort,Paralelo,8000,5,5175.249796
-SelectionSort,Paralelo,8000,5,4652.029556
-SelectionSort,Paralelo,8000,5,5121.341286
-SelectionSort,Media paralelo,8000,5,1024.2682571999999
-SelectionSort,Paralelo,8000,50,600.08995
-SelectionSort,Paralelo,8000,50,624.710536
-SelectionSort,Paralelo,8000,50,154.194434
-SelectionSort,Paralelo,8000,50,449.027422
-SelectionSort,Paralelo,8000,50,591.040202
-SelectionSort,Media paralelo,8000,50,118.2080404
-SelectionSort,Paralelo,8000,500,475.262732
-SelectionSort,Paralelo,8000,500,494.322919
-SelectionSort,Paralelo,8000,500,513.881481
-SelectionSort,Paralelo,8000,500,478.906143
-SelectionSort,Paralelo,8000,500,546.70014
-SelectionSort,Media paralelo,8000,500,109.340028
-QuickSort,Serial,50000,1,33.762888
-QuickSort,Serial,50000,1,13.151455
-QuickSort,Serial,50000,1,12.017068
-QuickSort,Serial,50000,1,12.675487
-QuickSort,Serial,50000,1,11.803555
-QuickSort,Media serial,50000,1,16.682090600000002
-QuickSort,Paralelo,50000,2,128.882455
-QuickSort,Paralelo,50000,2,55.507434
-QuickSort,Paralelo,50000,2,41.376005
-QuickSort,Paralelo,50000,2,13.734084
-QuickSort,Paralelo,50000,2,9.962012
-QuickSort,Media paralelo,50000,2,49.89239799999999
-QuickSort,Paralelo,50000,5,6.385031
-QuickSort,Paralelo,50000,5,3.721122
-QuickSort,Paralelo,50000,5,3.671631
-QuickSort,Paralelo,50000,5,3.269806
-QuickSort,Paralelo,50000,5,3.170567
-QuickSort,Media paralelo,50000,5,4.0436314
-QuickSort,Paralelo,50000,50,42.622096
-QuickSort,Paralelo,50000,50,50.816054
-QuickSort,Paralelo,50000,50,19.164237
-QuickSort,Paralelo,50000,50,19.775324
-QuickSort,Paralelo,50000,50,17.208329
-QuickSort,Media paralelo,50000,50,29.917208
-QuickSort,Paralelo,50000,500,117.333052
-QuickSort,Paralelo,50000,500,273.328024
-QuickSort,Paralelo,50000,500,357.846607
-QuickSort,Paralelo,50000,500,166.947612
-QuickSort,Paralelo,50000,500,84.1835
-QuickSort,Media paralelo,50000,500,199.92775899999998
-MergeSort,Serial,50000,1,10.412637
-MergeSort,Serial,50000,1,8.359167
-MergeSort,Serial,50000,1,6.251588
-MergeSort,Serial,50000,1,6.116194
-MergeSort,Serial,50000,1,6.134195
-MergeSort,Media serial,50000,1,7.4547562
-MergeSort,Paralelo,50000,2,17.153602
-MergeSort,Paralelo,50000,2,5.197046
-MergeSort,Paralelo,50000,2,5.227404
-MergeSort,Paralelo,50000,2,5.493408
-MergeSort,Paralelo,50000,2,5.542561
-MergeSort,Media paralelo,50000,2,7.722804200000001
-MergeSort,Paralelo,50000,5,5.257964
-MergeSort,Paralelo,50000,5,5.396888
-MergeSort,Paralelo,50000,5,2.90352
-MergeSort,Paralelo,50000,5,3.039825
-MergeSort,Paralelo,50000,5,3.137619
-MergeSort,Media paralelo,50000,5,3.9471632
-MergeSort,Paralelo,50000,50,5.91556
-MergeSort,Paralelo,50000,50,5.591156
-MergeSort,Paralelo,50000,50,5.595892
-MergeSort,Paralelo,50000,50,5.751456
-MergeSort,Paralelo,50000,50,5.64104
-MergeSort,Media paralelo,50000,50,5.6990208
-MergeSort,Paralelo,50000,500,50.999442
-MergeSort,Paralelo,50000,500,204.644604
-MergeSort,Paralelo,50000,500,267.54525
-MergeSort,Paralelo,50000,500,279.858923
-MergeSort,Paralelo,50000,500,287.496097
-MergeSort,Media paralelo,50000,500,218.1088632
-QuickSort,Serial,500000,1,143.681075
-QuickSort,Serial,500000,1,119.720694
-QuickSort,Serial,500000,1,50.563329
-QuickSort,Serial,500000,1,34.486597
-QuickSort,Serial,500000,1,34.314065
-QuickSort,Media serial,500000,1,76.553152
-QuickSort,Paralelo,500000,2,27.894393
-QuickSort,Paralelo,500000,2,29.33767
-QuickSort,Paralelo,500000,2,40.257484
-QuickSort,Paralelo,500000,2,71.5325
-QuickSort,Paralelo,500000,2,98.099082
-QuickSort,Media paralelo,500000,2,53.4242258
-QuickSort,Paralelo,500000,5,65.052263
-QuickSort,Paralelo,500000,5,72.739797
-QuickSort,Paralelo,500000,5,59.075414
-QuickSort,Paralelo,500000,5,66.987053
-QuickSort,Paralelo,500000,5,63.764505
-QuickSort,Media paralelo,500000,5,65.52380639999998
-QuickSort,Paralelo,500000,50,135.556038
-QuickSort,Paralelo,500000,50,110.573344
-QuickSort,Paralelo,500000,50,122.351616
-QuickSort,Paralelo,500000,50,142.074022
-QuickSort,Paralelo,500000,50,120.314764
-QuickSort,Media paralelo,500000,50,126.1739568
-QuickSort,Paralelo,500000,500,1044.292182
-QuickSort,Paralelo,500000,500,981.829237
-QuickSort,Paralelo,500000,500,275.378928
-QuickSort,Paralelo,500000,500,1065.101078
-QuickSort,Paralelo,500000,500,1221.601389
-QuickSort,Media paralelo,500000,500,917.6405628
-MergeSort,Serial,500000,1,155.935212
-MergeSort,Serial,500000,1,69.811161
-MergeSort,Serial,500000,1,56.898523
-MergeSort,Serial,500000,1,60.96124
-MergeSort,Serial,500000,1,55.975071
-MergeSort,Media serial,500000,1,79.9162414
-MergeSort,Paralelo,500000,2,39.461508
-MergeSort,Paralelo,500000,2,52.617862
-MergeSort,Paralelo,500000,2,125.536934
-MergeSort,Paralelo,500000,2,190.089937
-MergeSort,Paralelo,500000,2,127.64843
-MergeSort,Media paralelo,500000,2,107.07093419999998
-MergeSort,Paralelo,500000,5,93.757974
-MergeSort,Paralelo,500000,5,92.389379
-MergeSort,Paralelo,500000,5,90.331203
-MergeSort,Paralelo,500000,5,79.203928
-MergeSort,Paralelo,500000,5,90.500969
-MergeSort,Media paralelo,500000,5,89.2366906
-MergeSort,Paralelo,500000,50,150.118074
-MergeSort,Paralelo,500000,50,140.185543
-MergeSort,Paralelo,500000,50,148.963916
-MergeSort,Paralelo,500000,50,193.914707
-MergeSort,Paralelo,500000,50,146.749287
-MergeSort,Media paralelo,500000,50,155.98630540000002
-MergeSort,Paralelo,500000,500,155.677615
-MergeSort,Paralelo,500000,500,121.596023
-MergeSort,Paralelo,500000,500,383.083744
-MergeSort,Paralelo,500000,500,478.188493
-MergeSort,Paralelo,500000,500,471.022211
-MergeSort,Media paralelo,500000,500,321.9136172
-QuickSort,Serial,5000000,1,399.222029
-QuickSort,Serial,5000000,1,396.415529
-QuickSort,Serial,5000000,1,394.948809
-QuickSort,Serial,5000000,1,528.799241
-QuickSort,Serial,5000000,1,407.507932
-QuickSort,Media serial,5000000,1,425.378708
-QuickSort,Paralelo,5000000,2,440.455266
-QuickSort,Paralelo,5000000,2,319.689313
-QuickSort,Paralelo,5000000,2,457.675737
-QuickSort,Paralelo,5000000,2,399.077234
-QuickSort,Paralelo,5000000,2,450.835397
-QuickSort,Media paralelo,5000000,2,413.5465894
-QuickSort,Paralelo,5000000,5,144.15264
-QuickSort,Paralelo,5000000,5,146.270717
-QuickSort,Paralelo,5000000,5,142.000048
-QuickSort,Paralelo,5000000,5,129.740453
-QuickSort,Paralelo,5000000,5,128.741586
-QuickSort,Media paralelo,5000000,5,138.1810888
-QuickSort,Paralelo,5000000,50,170.518867
-QuickSort,Paralelo,5000000,50,193.990924
-QuickSort,Paralelo,5000000,50,194.958285
-QuickSort,Paralelo,5000000,50,192.195591
-QuickSort,Paralelo,5000000,50,204.659593
-QuickSort,Media paralelo,5000000,50,191.264652
-QuickSort,Paralelo,5000000,500,1171.927297
-QuickSort,Paralelo,5000000,500,1075.712513
-QuickSort,Paralelo,5000000,500,738.965493
-QuickSort,Paralelo,5000000,500,1182.647283
-QuickSort,Paralelo,5000000,500,1480.684725
-QuickSort,Media paralelo,5000000,500,1129.9874622
-MergeSort,Serial,5000000,1,628.910735
-MergeSort,Serial,5000000,1,626.340423
-MergeSort,Serial,5000000,1,642.592367
-MergeSort,Serial,5000000,1,630.632273
-MergeSort,Serial,5000000,1,626.873167
-MergeSort,Media serial,5000000,1,631.069793
-MergeSort,Paralelo,5000000,2,485.010523
-MergeSort,Paralelo,5000000,2,511.109189
-MergeSort,Paralelo,5000000,2,555.237554
-MergeSort,Paralelo,5000000,2,533.095883
-MergeSort,Paralelo,5000000,2,442.449181
-MergeSort,Media paralelo,5000000,2,505.38046599999996
-MergeSort,Paralelo,5000000,5,187.403585
-MergeSort,Paralelo,5000000,5,250.643014
-MergeSort,Paralelo,5000000,5,279.465782
-MergeSort,Paralelo,5000000,5,371.484211
-MergeSort,Paralelo,5000000,5,181.577823
-MergeSort,Media paralelo,5000000,5,254.11488300000002
-MergeSort,Paralelo,5000000,50,328.539529
-MergeSort,Paralelo,5000000,50,492.863088
-MergeSort,Paralelo,5000000,50,433.056705
-MergeSort,Paralelo,5000000,50,433.185759
-MergeSort,Paralelo,5000000,50,457.66454
-MergeSort,Media paralelo,5000000,50,429.06192419999996
-MergeSort,Paralelo,5000000,500,579.725083
-MergeSort,Paralelo,5000000,500,743.352908
-MergeSort,Paralelo,5000000,500,796.993586
-MergeSort,Paralelo,5000000,500,667.712517
-MergeSort,Paralelo,5000000,500,601.843822
-MergeSort,Media paralelo,5000000,500,677.9255832000001
+BubbleSort,Serial,500,1,2.704658
+BubbleSort,Serial,500,1,0.510757
+BubbleSort,Serial,500,1,0.501639
+BubbleSort,Serial,500,1,0.347853
+BubbleSort,Serial,500,1,0.488157
+BubbleSort,Media serial,500,1,0.9106128
+BubbleSort,Paralelo,500,2,1.306494
+BubbleSort,Paralelo,500,2,0.925371
+BubbleSort,Paralelo,500,2,0.948023
+BubbleSort,Paralelo,500,2,0.885028
+BubbleSort,Paralelo,500,2,1.030718
+BubbleSort,Media paralelo,500,2,1.0191268
+BubbleSort,Paralelo,500,5,1.22699
+BubbleSort,Paralelo,500,5,0.988961
+BubbleSort,Paralelo,500,5,0.787671
+BubbleSort,Paralelo,500,5,0.625075
+BubbleSort,Paralelo,500,5,0.726896
+BubbleSort,Media paralelo,500,5,0.8711186
+BubbleSort,Paralelo,500,10,0.947134
+BubbleSort,Paralelo,500,10,0.930465
+BubbleSort,Paralelo,500,10,1.442579
+BubbleSort,Paralelo,500,10,0.985429
+BubbleSort,Paralelo,500,10,0.912066
+BubbleSort,Media paralelo,500,10,1.0435346
+BubbleSort,Paralelo,500,50,0.612932
+BubbleSort,Paralelo,500,50,0.512671
+BubbleSort,Paralelo,500,50,0.514701
+BubbleSort,Paralelo,500,50,0.508716
+BubbleSort,Paralelo,500,50,0.497241
+BubbleSort,Media paralelo,500,50,0.5292522
+SelectionSort,Serial,500,1,1.273948
+SelectionSort,Serial,500,1,0.355048
+SelectionSort,Serial,500,1,0.404591
+SelectionSort,Serial,500,1,0.403838
+SelectionSort,Serial,500,1,0.412478
+SelectionSort,Media serial,500,1,0.5699806000000001
+SelectionSort,Paralelo,500,2,0.848631
+SelectionSort,Paralelo,500,2,0.728925
+SelectionSort,Paralelo,500,2,0.695115
+SelectionSort,Paralelo,500,2,0.461982
+SelectionSort,Paralelo,500,2,0.441204
+SelectionSort,Media paralelo,500,2,0.6351713999999999
+SelectionSort,Paralelo,500,5,0.942168
+SelectionSort,Paralelo,500,5,0.63152
+SelectionSort,Paralelo,500,5,0.569293
+SelectionSort,Paralelo,500,5,0.524535
+SelectionSort,Paralelo,500,5,5.271786
+SelectionSort,Media paralelo,500,5,1.5878603999999998
+SelectionSort,Paralelo,500,10,0.802413
+SelectionSort,Paralelo,500,10,0.847516
+SelectionSort,Paralelo,500,10,0.718142
+SelectionSort,Paralelo,500,10,0.780223
+SelectionSort,Paralelo,500,10,0.856515
+SelectionSort,Media paralelo,500,10,0.8009618
+SelectionSort,Paralelo,500,50,0.699267
+SelectionSort,Paralelo,500,50,0.598017
+SelectionSort,Paralelo,500,50,0.661982
+SelectionSort,Paralelo,500,50,0.766713
+SelectionSort,Paralelo,500,50,0.661396
+SelectionSort,Media paralelo,500,50,0.6774749999999999
+BubbleSort,Serial,5000,1,20.091439
+BubbleSort,Serial,5000,1,20.010665
+BubbleSort,Serial,5000,1,20.023455
+BubbleSort,Serial,5000,1,19.978741
+BubbleSort,Serial,5000,1,19.903093
+BubbleSort,Media serial,5000,1,20.0014786
+BubbleSort,Paralelo,5000,2,1.30871
+BubbleSort,Paralelo,5000,2,1.28026
+BubbleSort,Paralelo,5000,2,1.046422
+BubbleSort,Paralelo,5000,2,1.185022
+BubbleSort,Paralelo,5000,2,1.195368
+BubbleSort,Media paralelo,5000,2,1.2031564
+BubbleSort,Paralelo,5000,5,1.465659
+BubbleSort,Paralelo,5000,5,1.426878
+BubbleSort,Paralelo,5000,5,1.331065
+BubbleSort,Paralelo,5000,5,1.370647
+BubbleSort,Paralelo,5000,5,1.330777
+BubbleSort,Media paralelo,5000,5,1.3850052
+BubbleSort,Paralelo,5000,10,3.117499
+BubbleSort,Paralelo,5000,10,1.704167
+BubbleSort,Paralelo,5000,10,1.713693
+BubbleSort,Paralelo,5000,10,1.593515
+BubbleSort,Paralelo,5000,10,1.225091
+BubbleSort,Media paralelo,5000,10,1.8707929999999997
+BubbleSort,Paralelo,5000,50,3.848702
+BubbleSort,Paralelo,5000,50,2.280929
+BubbleSort,Paralelo,5000,50,3.287873
+BubbleSort,Paralelo,5000,50,3.245209
+BubbleSort,Paralelo,5000,50,4.166835
+BubbleSort,Media paralelo,5000,50,3.3659095999999997
+SelectionSort,Serial,5000,1,12.342116
+SelectionSort,Serial,5000,1,9.474227
+SelectionSort,Serial,5000,1,9.461503
+SelectionSort,Serial,5000,1,9.486326
+SelectionSort,Serial,5000,1,9.454066
+SelectionSort,Media serial,5000,1,10.0436476
+SelectionSort,Paralelo,5000,2,1.61062
+SelectionSort,Paralelo,5000,2,1.332221
+SelectionSort,Paralelo,5000,2,1.587042
+SelectionSort,Paralelo,5000,2,1.545103
+SelectionSort,Paralelo,5000,2,1.342942
+SelectionSort,Media paralelo,5000,2,1.4835856
+SelectionSort,Paralelo,5000,5,1.848376
+SelectionSort,Paralelo,5000,5,1.961653
+SelectionSort,Paralelo,5000,5,1.811126
+SelectionSort,Paralelo,5000,5,1.783681
+SelectionSort,Paralelo,5000,5,1.814465
+SelectionSort,Media paralelo,5000,5,1.8438602
+SelectionSort,Paralelo,5000,10,2.577152
+SelectionSort,Paralelo,5000,10,1.917052
+SelectionSort,Paralelo,5000,10,1.912221
+SelectionSort,Paralelo,5000,10,2.115589
+SelectionSort,Paralelo,5000,10,2.044556
+SelectionSort,Media paralelo,5000,10,2.113314
+SelectionSort,Paralelo,5000,50,5.060481
+SelectionSort,Paralelo,5000,50,6.36368
+SelectionSort,Paralelo,5000,50,8.619827
+SelectionSort,Paralelo,5000,50,10.492972
+SelectionSort,Paralelo,5000,50,16.413783
+SelectionSort,Media paralelo,5000,50,9.3901486
+BubbleSort,Serial,8000,1,233.02772
+BubbleSort,Serial,8000,1,63.816907
+BubbleSort,Serial,8000,1,57.988149
+BubbleSort,Serial,8000,1,57.082597
+BubbleSort,Serial,8000,1,57.081271
+BubbleSort,Media serial,8000,1,93.79932880000001
+BubbleSort,Paralelo,8000,2,1.148827
+BubbleSort,Paralelo,8000,2,1.104686
+BubbleSort,Paralelo,8000,2,0.960719
+BubbleSort,Paralelo,8000,2,1.120947
+BubbleSort,Paralelo,8000,2,1.094675
+BubbleSort,Media paralelo,8000,2,1.0859708000000001
+BubbleSort,Paralelo,8000,5,1.155305
+BubbleSort,Paralelo,8000,5,1.061699
+BubbleSort,Paralelo,8000,5,0.957947
+BubbleSort,Paralelo,8000,5,0.867784
+BubbleSort,Paralelo,8000,5,0.703558
+BubbleSort,Media paralelo,8000,5,0.9492586000000001
+BubbleSort,Paralelo,8000,10,1.203212
+BubbleSort,Paralelo,8000,10,1.130154
+BubbleSort,Paralelo,8000,10,1.308833
+BubbleSort,Paralelo,8000,10,1.183376
+BubbleSort,Paralelo,8000,10,1.195682
+BubbleSort,Media paralelo,8000,10,1.2042514
+BubbleSort,Paralelo,8000,50,3.838139
+BubbleSort,Paralelo,8000,50,4.429544
+BubbleSort,Paralelo,8000,50,4.615286
+BubbleSort,Paralelo,8000,50,5.006865
+BubbleSort,Paralelo,8000,50,4.735489
+BubbleSort,Media paralelo,8000,50,4.5250646
+SelectionSort,Serial,8000,1,20.062974
+SelectionSort,Serial,8000,1,26.330224
+SelectionSort,Serial,8000,1,50.147063
+SelectionSort,Serial,8000,1,69.505849
+SelectionSort,Serial,8000,1,68.663943
+SelectionSort,Media serial,8000,1,46.9420106
+SelectionSort,Paralelo,8000,2,3.338677
+SelectionSort,Paralelo,8000,2,3.210524
+SelectionSort,Paralelo,8000,2,3.173193
+SelectionSort,Paralelo,8000,2,3.740107
+SelectionSort,Paralelo,8000,2,3.169158
+SelectionSort,Media paralelo,8000,2,3.3263317999999997
+SelectionSort,Paralelo,8000,5,3.417253
+SelectionSort,Paralelo,8000,5,3.693424
+SelectionSort,Paralelo,8000,5,3.53931
+SelectionSort,Paralelo,8000,5,3.515288
+SelectionSort,Paralelo,8000,5,3.556872
+SelectionSort,Media paralelo,8000,5,3.5444294
+SelectionSort,Paralelo,8000,10,5.887591
+SelectionSort,Paralelo,8000,10,5.784223
+SelectionSort,Paralelo,8000,10,5.990193
+SelectionSort,Paralelo,8000,10,6.016991
+SelectionSort,Paralelo,8000,10,5.974762
+SelectionSort,Media paralelo,8000,10,5.930752
+SelectionSort,Paralelo,8000,50,22.699061
+SelectionSort,Paralelo,8000,50,25.319712
+SelectionSort,Paralelo,8000,50,24.313547
+SelectionSort,Paralelo,8000,50,23.519901
+SelectionSort,Paralelo,8000,50,26.618521
+SelectionSort,Media paralelo,8000,50,24.4941484
+QuickSort,Serial,50000,1,33.042155
+QuickSort,Serial,50000,1,24.226578
+QuickSort,Serial,50000,1,14.092762
+QuickSort,Serial,50000,1,14.537745
+QuickSort,Serial,50000,1,14.601426
+QuickSort,Media serial,50000,1,20.1001332
+QuickSort,Paralelo,50000,2,91.005526
+QuickSort,Paralelo,50000,2,36.344814
+QuickSort,Paralelo,50000,2,22.054024
+QuickSort,Paralelo,50000,2,27.003267
+QuickSort,Paralelo,50000,2,13.789058
+QuickSort,Media paralelo,50000,2,38.0393378
+QuickSort,Paralelo,50000,5,9.21333
+QuickSort,Paralelo,50000,5,31.263857
+QuickSort,Paralelo,50000,5,9.805697
+QuickSort,Paralelo,50000,5,8.773359
+QuickSort,Paralelo,50000,5,9.637212
+QuickSort,Media paralelo,50000,5,13.738691
+QuickSort,Paralelo,50000,10,9.473017
+QuickSort,Paralelo,50000,10,9.105218
+QuickSort,Paralelo,50000,10,9.293194
+QuickSort,Paralelo,50000,10,9.268315
+QuickSort,Paralelo,50000,10,9.610949
+QuickSort,Media paralelo,50000,10,9.3501386
+QuickSort,Paralelo,50000,50,34.681743
+QuickSort,Paralelo,50000,50,41.960688
+QuickSort,Paralelo,50000,50,36.573295
+QuickSort,Paralelo,50000,50,36.730149
+QuickSort,Paralelo,50000,50,56.116614
+QuickSort,Media paralelo,50000,50,41.2124978
+MergeSort,Serial,50000,1,35.098705
+MergeSort,Serial,50000,1,29.301707
+MergeSort,Serial,50000,1,25.843017
+MergeSort,Serial,50000,1,25.530348
+MergeSort,Serial,50000,1,24.881504
+MergeSort,Media serial,50000,1,28.1310562
+MergeSort,Paralelo,50000,2,47.994055
+MergeSort,Paralelo,50000,2,8.356582
+MergeSort,Paralelo,50000,2,10.157658
+MergeSort,Paralelo,50000,2,10.066461
+MergeSort,Paralelo,50000,2,8.996875
+MergeSort,Media paralelo,50000,2,17.1143262
+MergeSort,Paralelo,50000,5,5.739668
+MergeSort,Paralelo,50000,5,4.330131
+MergeSort,Paralelo,50000,5,3.935215
+MergeSort,Paralelo,50000,5,3.987317
+MergeSort,Paralelo,50000,5,4.438531
+MergeSort,Media paralelo,50000,5,4.4861724
+MergeSort,Paralelo,50000,10,4.592092
+MergeSort,Paralelo,50000,10,14.774493
+MergeSort,Paralelo,50000,10,5.069371
+MergeSort,Paralelo,50000,10,4.884957
+MergeSort,Paralelo,50000,10,4.993242
+MergeSort,Media paralelo,50000,10,6.862831
+MergeSort,Paralelo,50000,50,12.682343
+MergeSort,Paralelo,50000,50,15.096556
+MergeSort,Paralelo,50000,50,27.016752
+MergeSort,Paralelo,50000,50,30.196486
+MergeSort,Paralelo,50000,50,30.95952
+MergeSort,Media paralelo,50000,50,23.190331399999998
+QuickSort,Serial,500000,1,149.554834
+QuickSort,Serial,500000,1,64.66039
+QuickSort,Serial,500000,1,35.862512
+QuickSort,Serial,500000,1,35.090822
+QuickSort,Serial,500000,1,35.113044
+QuickSort,Media serial,500000,1,64.0563204
+QuickSort,Paralelo,500000,2,25.953521
+QuickSort,Paralelo,500000,2,31.510701
+QuickSort,Paralelo,500000,2,74.665745
+QuickSort,Paralelo,500000,2,104.935785
+QuickSort,Paralelo,500000,2,114.109327
+QuickSort,Media paralelo,500000,2,70.2350158
+QuickSort,Paralelo,500000,5,76.928711
+QuickSort,Paralelo,500000,5,50.594272
+QuickSort,Paralelo,500000,5,88.074127
+QuickSort,Paralelo,500000,5,78.28694
+QuickSort,Paralelo,500000,5,66.504257
+QuickSort,Media paralelo,500000,5,72.0776614
+QuickSort,Paralelo,500000,10,51.596194
+QuickSort,Paralelo,500000,10,50.624288
+QuickSort,Paralelo,500000,10,50.372673
+QuickSort,Paralelo,500000,10,50.632076
+QuickSort,Paralelo,500000,10,35.625544
+QuickSort,Media paralelo,500000,10,47.770155
+QuickSort,Paralelo,500000,50,18.389822
+QuickSort,Paralelo,500000,50,14.519146
+QuickSort,Paralelo,500000,50,14.334641
+QuickSort,Paralelo,500000,50,13.867257
+QuickSort,Paralelo,500000,50,13.158749
+QuickSort,Media paralelo,500000,50,14.853923
+MergeSort,Serial,500000,1,65.33217
+MergeSort,Serial,500000,1,58.350482
+MergeSort,Serial,500000,1,58.075875
+MergeSort,Serial,500000,1,64.608569
+MergeSort,Serial,500000,1,58.637098
+MergeSort,Media serial,500000,1,61.0008388
+MergeSort,Paralelo,500000,2,47.543387
+MergeSort,Paralelo,500000,2,117.867092
+MergeSort,Paralelo,500000,2,154.399252
+MergeSort,Paralelo,500000,2,182.413816
+MergeSort,Paralelo,500000,2,166.882652
+MergeSort,Media paralelo,500000,2,133.8212398
+MergeSort,Paralelo,500000,5,95.456987
+MergeSort,Paralelo,500000,5,86.368023
+MergeSort,Paralelo,500000,5,98.091091
+MergeSort,Paralelo,500000,5,105.32203
+MergeSort,Paralelo,500000,5,90.156287
+MergeSort,Media paralelo,500000,5,95.07888360000001
+MergeSort,Paralelo,500000,10,94.139359
+MergeSort,Paralelo,500000,10,97.292796
+MergeSort,Paralelo,500000,10,72.461122
+MergeSort,Paralelo,500000,10,57.674809
+MergeSort,Paralelo,500000,10,49.099223
+MergeSort,Media paralelo,500000,10,74.13346179999999
+MergeSort,Paralelo,500000,50,54.501802
+MergeSort,Paralelo,500000,50,69.234496
+MergeSort,Paralelo,500000,50,54.776242
+MergeSort,Paralelo,500000,50,57.273521
+MergeSort,Paralelo,500000,50,67.957436
+MergeSort,Media paralelo,500000,50,60.74869940000001
+QuickSort,Serial,5000000,1,401.529889
+QuickSort,Serial,5000000,1,398.881918
+QuickSort,Serial,5000000,1,397.425155
+QuickSort,Serial,5000000,1,412.677005
+QuickSort,Serial,5000000,1,402.269538
+QuickSort,Media serial,5000000,1,402.556701
+QuickSort,Paralelo,5000000,2,448.584182
+QuickSort,Paralelo,5000000,2,311.147104
+QuickSort,Paralelo,5000000,2,292.619502
+QuickSort,Paralelo,5000000,2,439.814573
+QuickSort,Paralelo,5000000,2,455.847101
+QuickSort,Media paralelo,5000000,2,389.60249239999996
+QuickSort,Paralelo,5000000,5,259.964625
+QuickSort,Paralelo,5000000,5,337.145576
+QuickSort,Paralelo,5000000,5,231.065573
+QuickSort,Paralelo,5000000,5,230.871122
+QuickSort,Paralelo,5000000,5,282.030494
+QuickSort,Media paralelo,5000000,5,268.21547799999996
+QuickSort,Paralelo,5000000,10,186.275799
+QuickSort,Paralelo,5000000,10,132.700256
+QuickSort,Paralelo,5000000,10,131.089128
+QuickSort,Paralelo,5000000,10,127.706956
+QuickSort,Paralelo,5000000,10,134.542534
+QuickSort,Media paralelo,5000000,10,142.46293459999998
+QuickSort,Paralelo,5000000,50,137.809803
+QuickSort,Paralelo,5000000,50,160.859044
+QuickSort,Paralelo,5000000,50,118.997812
+QuickSort,Paralelo,5000000,50,141.212776
+QuickSort,Paralelo,5000000,50,119.230389
+QuickSort,Media paralelo,5000000,50,135.62196480000003
+MergeSort,Serial,5000000,1,678.579091
+MergeSort,Serial,5000000,1,691.574084
+MergeSort,Serial,5000000,1,646.519745
+MergeSort,Serial,5000000,1,664.235126
+MergeSort,Serial,5000000,1,641.487944
+MergeSort,Media serial,5000000,1,664.479198
+MergeSort,Paralelo,5000000,2,544.503971
+MergeSort,Paralelo,5000000,2,522.856712
+MergeSort,Paralelo,5000000,2,532.786487
+MergeSort,Paralelo,5000000,2,480.92887
+MergeSort,Paralelo,5000000,2,559.392657
+MergeSort,Media paralelo,5000000,2,528.0937394
+MergeSort,Paralelo,5000000,5,190.687373
+MergeSort,Paralelo,5000000,5,200.896156
+MergeSort,Paralelo,5000000,5,187.57308
+MergeSort,Paralelo,5000000,5,208.727321
+MergeSort,Paralelo,5000000,5,214.97226
+MergeSort,Media paralelo,5000000,5,200.571238
+MergeSort,Paralelo,5000000,10,190.071847
+MergeSort,Paralelo,5000000,10,183.872975
+MergeSort,Paralelo,5000000,10,184.598573
+MergeSort,Paralelo,5000000,10,173.430324
+MergeSort,Paralelo,5000000,10,199.246598
+MergeSort,Media paralelo,5000000,10,186.24406340000002
+MergeSort,Paralelo,5000000,50,191.652014
+MergeSort,Paralelo,5000000,50,175.802427
+MergeSort,Paralelo,5000000,50,175.352004
+MergeSort,Paralelo,5000000,50,188.357901
+MergeSort,Paralelo,5000000,50,188.497732
+MergeSort,Media paralelo,5000000,50,183.93241559999998

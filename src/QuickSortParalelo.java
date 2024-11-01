@@ -45,7 +45,6 @@ public class QuickSortParalelo implements SortAlgorithm {
             for (int j = low; j < high; j++) {
                 if (array[j] < pivot) {
                     i++;
-                    // Swap
                     int temp = array[i];
                     array[i] = array[j];
                     array[j] = temp;

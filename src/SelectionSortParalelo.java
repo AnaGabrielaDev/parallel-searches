@@ -1,14 +1,11 @@
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.concurrent.Future;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.concurrent.RecursiveAction;
+import java.util.concurrent.ForkJoinPool;
 
 public class SelectionSortParalelo implements SortAlgorithm {
-    private final ExecutorService threadPool;
+    private final ForkJoinPool forkJoinPool;
 
     public SelectionSortParalelo(int numThreads) {
-        this.threadPool = Executors.newFixedThreadPool(numThreads);
+        this.forkJoinPool = new ForkJoinPool(numThreads);
     }
 
     @Override
@@ -16,51 +13,69 @@ public class SelectionSortParalelo implements SortAlgorithm {
         if (array == null || array.length <= 1) {
             return;
         }
-        try {
-            selectionSort(array);
-        } finally {
-            threadPool.shutdown();
-        }
+        forkJoinPool.invoke(new SelectionSortTask(array, 0, array.length - 1));
     }
 
-    private void selectionSort(int[] array) {
-        int n = array.length;
-        for (int i = 0; i < n - 1; i++) {
-            final int currentMinIndex = i;
-            List<Future<Integer>> futures = new ArrayList<>();
+    private static class SelectionSortTask extends RecursiveAction {
+        private final int[] array;
+        private final int low;
+        private final int high;
+        private static final int THRESHOLD = 100;
 
-            for (int j = i + 1; j < n; j++) {
-                final int index = j;
-                futures.add(threadPool.submit(() -> {
-                    if (array[index] < array[currentMinIndex]) {
-                        return index;
-                    } else {
-                        return currentMinIndex;
-                    }
-                }));
+        public SelectionSortTask(int[] array, int low, int high) {
+            this.array = array;
+            this.low = low;
+            this.high = high;
+        }
+
+        @Override
+        protected void compute() {
+            if (high - low < THRESHOLD) {
+                selectionSort(array, low, high);
+            } else {
+                int mid = (low + high) / 2;
+                SelectionSortTask leftTask = new SelectionSortTask(array, low, mid);
+                SelectionSortTask rightTask = new SelectionSortTask(array, mid + 1, high);
+                invokeAll(leftTask, rightTask);
+                merge(array, low, mid, high);
             }
+        }
 
-            int minIndex = currentMinIndex;
-            for (Future<Integer> future : futures) {
-                try {
-                    int result = future.get();
-                    if (array[result] < array[minIndex]) {
-                        minIndex = result;
+        private void selectionSort(int[] array, int low, int high) {
+            for (int i = low; i <= high; i++) {
+                int minIndex = i;
+                for (int j = i + 1; j <= high; j++) {
+                    if (array[j] < array[minIndex]) {
+                        minIndex = j;
                     }
-                } catch (Exception e) {
-                    e.printStackTrace();
+                }
+                int temp = array[minIndex];
+                array[minIndex] = array[i];
+                array[i] = temp;
+            }
+        }
+
+        private void merge(int[] array, int low, int mid, int high) {
+            int[] temp = new int[high - low + 1];
+            int i = low, j = mid + 1, k = 0;
+
+            while (i <= mid && j <= high) {
+                if (array[i] <= array[j]) {
+                    temp[k++] = array[i++];
+                } else {
+                    temp[k++] = array[j++];
                 }
             }
 
-            if (minIndex != i) {
-                swap(array, i, minIndex);
+            while (i <= mid) {
+                temp[k++] = array[i++];
             }
-        }
-    }
 
-    private void swap(int[] array, int i, int j) {
-        int temp = array[i];
-        array[i] = array[j];
-        array[j] = temp;
+            while (j <= high) {
+                temp[k++] = array[j++];
+            }
+
+            System.arraycopy(temp, 0, array, low, temp.length);
+        }
     }
 }

@@ -1,0 +1,16 @@
+ParallelSort.class
+QuickSortParalelo$QuickSortTask.class
+MergeSortParalelo.class
+BubbleSort.class
+MergeSort.class
+QuickSortParalelo.class
+SelectionSort.class
+Main.class
+Benchmark.class
+SelectionSortParalelo.class
+SortAlgorithm.class
+BubbleSortParalelo$BubbleSortTask.class
+MergeSortParalelo$MergeSortTask.class
+SelectionSortParalelo$SelectionSortTask.class
+QuickSort.class
+BubbleSortParalelo.class
